@@ -113,7 +113,7 @@ if __name__ == '__main__':
         # 判断北温打是否成功
         status = json_post_health["msg"]
         if status == "操作成功":
-            print("北温打完毕。")
+            print("周心如闺蜜北温打完毕。")
             tools.server(sckey, "北温打完毕")
             tools.mail(my_sender, my_pass, my_user, "北温打完毕")
         else:
