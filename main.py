@@ -118,5 +118,5 @@ if __name__ == '__main__':
         else:
             print("我也不知道啥情况，自己看输出结果 debug 下或者自己手动北温打吧？")
             print("返回的错误/打卡结果是:   " + status)
-            tools.server(sckey, "心如同学，打卡失败了，请手动打卡")
+            tools.server(sckey, "心如同学，打卡失败了，请手动打卡，"+ status)
             tools.mail(my_sender, my_pass, my_user, "北温打失败，请手动北温打")
