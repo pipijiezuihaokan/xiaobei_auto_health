@@ -114,10 +114,9 @@ if __name__ == '__main__':
         status = json_post_health["msg"]
         if status == "操作成功":
             print("周心如闺蜜北温打完毕。")
-            tools.server(sckey, "北温打完毕")
             tools.mail(my_sender, my_pass, my_user, "北温打完毕")
         else:
             print("我也不知道啥情况，自己看输出结果 debug 下或者自己手动北温打吧？")
             print("返回的错误/打卡结果是:   " + status)
-            tools.server(sckey, "北温打失败，请手动北温打")
+            tools.server(sckey, "心如同学，打卡失败了，请手动打卡")
             tools.mail(my_sender, my_pass, my_user, "北温打失败，请手动北温打")
