@@ -13,6 +13,7 @@ my_sender = os.environ.get('MYSENDER')
 my_pass = os.environ.get('MYPASS')
 my_user = os.environ.get('MYUSER')
 
+
 if username == None or password == None or location == None:
     # 引入 config 文件
     import config
